@@ -1,0 +1,147 @@
+:root{
+  --bg:#0f1115;
+  --card:#181b22;
+  --muted:#a0a7b5;
+  --accent:#2b8bd6;
+  --danger:#e55353;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+  background:var(--bg);
+  color:#e7edf7;
+}
+
+/* header */
+.admin-header{
+  background:#10131a;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.admin-header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.admin-brand{
+  font-weight:700;
+  letter-spacing:.06em;
+}
+.admin-brand span{
+  font-size:11px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-left:6px;
+}
+.admin-nav a{
+  color:#dde7f6;
+  text-decoration:none;
+  margin-left:14px;
+  font-size:14px;
+}
+.admin-nav a:hover{
+  color:#fff;
+}
+
+/* main layout */
+.admin-main{
+  padding:18px 0 30px;
+}
+.admin-main-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* card */
+.admin-card{
+  background:var(--card);
+  border-radius:10px;
+  padding:16px 18px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
+.admin-card + .admin-card{
+  margin-top:18px;
+}
+
+/* table */
+.table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+.table th,
+.table td{
+  padding:8px 10px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.table th{
+  text-align:left;
+  font-weight:600;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* buttons */
+.btn{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:6px;
+  font-size:13px;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+}
+.btn-secondary{
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+}
+.btn-danger{
+  background:var(--danger);
+  color:#fff;
+}
+
+/* forms */
+.admin-card form label{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+}
+.admin-card input[type="text"],
+.admin-card textarea,
+.admin-card select{
+  width:100%;
+  padding:7px 9px;
+  border-radius:6px;
+  border:1px solid #333947;
+  background:#10131a;
+  color:#e7edf7;
+  font-size:14px;
+}
+.admin-card input[type="file"]{
+  font-size:13px;
+}
+.admin-footer{
+  text-align:center;
+  padding:10px 0 18px;
+  font-size:12px;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,0.05);
+  margin-top:10px;
+}
+
+/* small text */
+.text-muted{
+  color:var(--muted);
+  font-size:13px;
+}
+.actions a{
+  margin-right:6px;
+}
